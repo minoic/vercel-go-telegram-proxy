@@ -17,6 +17,7 @@ func init() {
 		uri := context.Param("path")
 		if !strings.Contains(uri, "bot") {
 			context.String(http.StatusOK, "404 Not found")
+			return
 		}
 		url := apiUrl + uri
 		req, err := http.NewRequestWithContext(context, context.Request.Method, url, context.Request.Body)
