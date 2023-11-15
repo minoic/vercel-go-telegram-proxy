@@ -16,7 +16,7 @@ func init() {
 	router.Any("/*path", func(context *gin.Context) {
 		uri := context.Param("path")
 		if !strings.Contains(uri, "bot") {
-			context.String(http.StatusOK, "404 Not found")
+			context.String(http.StatusNotFound, "404 Not found")
 			return
 		}
 		url := apiUrl + uri
