@@ -4,5 +4,11 @@
       "src": "/.*",
       "dest": "/api/router.go"
     }
-  ]
+  ],
+  "functions": {
+    "/api/router.go": {
+      "memory": 128,
+      "maxDuration": 30
+    }
+  }
 }
