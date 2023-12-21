@@ -7,8 +7,7 @@
   ],
   "functions": {
     "/.*": {
-      "memory": 128,
-      "maxDuration": 30
+      "memory": 128
     }
   }
 }
